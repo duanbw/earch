@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+footer p {
+  margin: 0;
+}
+
 a {
   color: gray;
 }
@@ -40,7 +44,7 @@ a {
 .buttons {
   width: 100%;
   display: table;
-  height: 200px;
+  height: max(calc(50% - 100px - 18pt), 120px);
 }
 
 .primary-button {
