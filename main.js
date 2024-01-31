@@ -6,20 +6,35 @@ function init() {
     entry['url'] = parts.join('/')
   }
   window.addEventListener('keydown', function(evt) {
+    var audio = document.getElementById('audio')
     switch(evt.code) {
       case "Space":
-        var audio = document.getElementById('audio')
         if(audio.paused) {
           audio.play()
         } else {
           audio.pause()
         }
         break
-      case "Enter": // enter
+      case "Enter":
+      case "NumpadEnter":
         next_song()
         break
-      case "KeyS": // s
+      case "KeyS":
         show_answer()
+        break
+      case "ArrowUp":
+      case "+":
+        // volume up
+        try {
+          audio.volume += 0.05
+        } catch(e) {}
+        break
+      case "ArrowDown":
+      case "-":
+        // volume down
+        try {
+          audio.volume -= 0.05
+        } catch(e) {}
         break
       default:
         console.log(evt)
