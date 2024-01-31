@@ -18,7 +18,7 @@ a {
   top: 0;
   width: 100%;
   text-align: center;
-  font-size: 8em;
+  font-size: max(10vw, 6em);
   color: #80808040;
   z-index: -10;
   pointer-events: none;
