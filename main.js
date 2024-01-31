@@ -26,6 +26,10 @@ function init() {
     }
   })
   document.getElementById('custom-content').innerHTML = window.FOOTER_TEXT
+  var audio = document.getElementById('audio')
+  audio.addEventListener('ended', function(evt) {
+    show_answer()
+  })
 }
 
 function setSeed(seed) {
