@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>听音辨曲(earch)</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="config.js"></script>
+    <script src="songs.js"></script>
+  </head>
+  <body>
+    <!--
+    <div class="global-buttons">
+      <button onclick="next_song()">开始</button>
+      <button onclick="pause()">暂停</button>
+      <button onclick="shuffle_songs()">重置</button>
+    </div>
+    -->
+    <div class="app-name">听音辨曲</div>
+    <div class="song-container">
+      <div id="song-name">听音辨曲</div>
+    </div>
+    <audio id="audio" controls>
+      浏览器不支持
+    </audio>
+    <div class="buttons">
+      <div class="primary-button" id="show-answer" onclick="show_answer()">显示歌名</div>
+      <div class="primary-button" id="next-song" onclick="next_song()">下一首歌</div>
+    </div>
+  </body>
+  <footer>
+    <p id="custom-content"></p>
+    <p>背景图片来自<a href="https://vlad.studio">Vladstudio</a></p>
+  </footer>
+  <script src="main.js"></script>
+</html>

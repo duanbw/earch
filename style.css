@@ -1,0 +1,72 @@
+body {
+  background-image: url(Sound-Wave-Wallpaper-by-vladstudio.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+a {
+  color: gray;
+}
+
+.app-name {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 8em;
+  color: #80808040;
+  z-index: -10;
+  pointer-events: none;
+}
+
+.song-container {
+  display: table;
+  width: 100%;
+  height: 50%;
+}
+
+#song-name {
+  display: table-cell;
+  text-align: center;
+  font-size: 5em;
+  vertical-align: middle;
+}
+
+#song-name.near .count_down {
+  color: red;
+}
+
+.buttons {
+  width: 100%;
+  display: table;
+  height: 200px;
+}
+
+.primary-button {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 2em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ee82ee4d;
+}
+
+.primary-button:hover {
+  background-color: #ee82ee9c;
+}
+
+#audio {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+footer {
+  font-size: 9pt;
+  text-align: center;
+  color: #d3d3d340;
+}
